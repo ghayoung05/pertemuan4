@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    background-color: #222;
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 16px;
+}
+.container .btn-groups {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 8px;
+}
+.container .btn-groups .btn {
+    border-radius: 999px;
+    padding: 20px 0;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.container .btn-groups .btn:hover{
+    opacity: 0.7;
+}
+
+.container .btn-groups .btn.btn-0 {
+    grid-column: span 2;
+}
+
+.container .btn-groups .btn.btn-ac,
+.container .btn-groups .btn.btn-del,
+.container .btn-groups .btn.btn-mod {
+    background-color: #888;
+    color: #222;
+}
+
+.container .btn-groups .btn.btn-div,
+.container .btn-groups .btn.btn-times,
+.container .btn-groups .btn.btn-min,
+.container .btn-groups .btn.btn-plus,
+.container .btn-groups .btn.btn-equal{
+background-color: rgb(253, 152, 0);
+
+}
+
+.container .result {
+    text-align: end;
+    font-size: 24px;
+    color: #fff;
+    margin-top: -30px;
+}
+
+.container .result .result-text {
+    font-weight: 500;
+}
